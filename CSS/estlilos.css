@@ -1,3 +1,27 @@
-p{
-    color: #198502;
+/* Estilos para la página web */
+
+.encabezado {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.parrafo {
+    text-align: justify;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+#fondo {
+    background-color:  rgb(208, 218, 248);
+    /* modificar el color a elección */
+}
+
+p a {
+    color: #333;
+    text-decoration: none;
+}
+.texto{
+    font-weight: 900;
 }

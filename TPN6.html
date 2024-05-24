@@ -10,9 +10,18 @@
             color: rgb(164, 130, 196);
         }
 
-        dt{
-           background-color:  rgb(164, 130, 196);
-            width: 150px; 
+        dt {
+            background-color: rgb(164, 130, 196);
+            width: 150px;
+        }
+
+        th {
+            background-color:55;
+            width: 200px;
+        }
+
+        td {
+            background-color: antiquewhite;
         }
     </style>
 </head>
@@ -53,15 +62,15 @@
             <dt>
                 Elementos de CSS
             </dt>
-            <dd>    Selector: selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos "p" ). Para dar
-                    estilo a un elemento diferente, solo cambia el selector. <br>
-                    Declaración: aplica las propiedades que querés dar al elemento seleccionado en el Selector. En este
-                    caso hay una sola regla, pero puede haber más. <br>
-                    Propiedades: es lo que te permite dar un estilo a un elemento HTML. En el ejemplo la propiedad es
-                    color que le dará color a las letras de los párrafos.
-                    Siempre las propiedades se ubicarán a la izquierda. <br>
-                    Valor de la propiedad: las propiedades deben tener un valor. Cada propiedad tiene valores definidos.
-                    Cada valor se ubicará a la derecha. </dd>
+            <dd> Selector: selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos "p" ). Para dar
+                estilo a un elemento diferente, solo cambia el selector. <br>
+                Declaración: aplica las propiedades que querés dar al elemento seleccionado en el Selector. En este
+                caso hay una sola regla, pero puede haber más. <br>
+                Propiedades: es lo que te permite dar un estilo a un elemento HTML. En el ejemplo la propiedad es
+                color que le dará color a las letras de los párrafos.
+                Siempre las propiedades se ubicarán a la izquierda. <br>
+                Valor de la propiedad: las propiedades deben tener un valor. Cada propiedad tiene valores definidos.
+                Cada valor se ubicará a la derecha. </dd>
 
         </dl>
 
@@ -74,13 +83,67 @@
         <h3>1.6- Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h3>
 
         <dl>
-s
+            <dt>
+                universal:
+            </dt>
+
+            <dd>
+                permite aplicar estilos a todos los elementos html de un documento
+            </dd>
+            <dt>
+                etiquetas:
+            </dt>
+            <dd>
+                podemos agregar estilos a todas las etiquetas de un tipo
+            </dd>
+            <dt>
+                descendente:
+            </dt>
+            <dd>
+                con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores
+                siempre están formados por dos o más selectores separados entre si
+            </dd>
+            <dt>
+                clase:
+            </dt>
+            <dd>
+                permite seleccionar todos los elemntos que tienen un mismo nombre de clases
+            </dd>
+            <dt>
+                ID:
+            </dt>
+            <dd>
+                este selector es igual al de clase, aunque se aplica un único elemento HTML de nuestra página.
+            </dd>
         </dl>
-        
 
         <h3>1.7- Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS?</h3>
 
+        <ol>
+            <li>El navegador carga el HTML (por ejemplo, lo recibe de la red).</li>
+            <li>Convierte el HTML en un DOM (Modelo de objetos del documento).
+                El DOM representa el documento en la memoria del ordenador. </li>
+            <li>El navegador va a buscar la mayor parte de los recursos vinculados al documento HTML, como las imágenes
+                y los videos incrustados... ¡y también el CSS vinculado!
+                JavaScript aparece un poco más adelante en el proceso</li>
+            <li>El navegador analiza el CSS y ordena en diferentes «cubos» las diferentes reglas según el tipo de
+                selector. Por ejemplo, elemento, clase, ID, y así sucesivamente.
+                Para cada tipo de selector que encuentre, calcula qué reglas deben aplicarse y a qué nodos en el DOM se
+                les aplica el estilo según corresponda
+                (este paso intermedio se llama árbol de renderización).</li>
+            <li>El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle
+                las reglas.</li>
+            <li>En la pantalla se muestra el aspecto visual de la página (esta etapa se llama pintura).</li>
+        </ol>
+
         <h3>1.8- ¿Cuáles son las tres formas para vincular CSS con HTML?</h3>
+        <ol>
+            <li>utilizando la etiqueta style: dentro de la etiqueta "head" utilizaremos la etiqueta "style" es decir que
+                los CSS se aplican al MISMO docuemnto HTML.</li>
+            <li>utilizando el atributo style: en nuestro HTML aplicaremos estilos directamente a la etiqueta.</li>
+            <li>utilizando un archivo externo: esta opción es la que nos permite vincular un archivo HTML con un archivo
+                CSS, En el head del HTML debemos utilizar la etiqueta link</li>
+        </ol>
 
         <h3>1.9- Ingrese al sitio CSS Zen Garden http://www.csszengarden.com y analicemos el código HTML siguiendo los
             siguientes pasos:
@@ -95,6 +158,176 @@ s
             Abrir los dos archivos CSS de los diseños seleccionados. ¿Son los mismos? <br>
             En líneas generales, el mismo HTML ¿puede tener diferentes diseños?
         </h3>
+        <a href="https://csszengarden.com/204/" target="_blank">Primer diseño</a><br>
+        <a href="https://csszengarden.com/219/" target="_blank">Segundo diseño</a>
+
+        <p>
+            entre el diseño 1 y el 2 no hay diferencia entre los html, lo que se modifica son los estilos de CSS
+        </p>
+
+        <h2>Ejercicio 2: Práctica Inicial de CSS</h2>
+
+        <h3>2.0- Utilizaremos las siguientes propiedades de CSS. Completar la columna de valores posibles para cada
+            propiedad.</h3><br>
+
+        <table>
+            <tr>
+                <th>propiedad</th>
+                <th>descrpción</th>
+                <th>valores posibles</th>
+            </tr>
+
+            <tr>
+                <td>color</td>
+                <td>define el color del texto</td>
+                <td>plum #dda0dd</td>
+            </tr>
+
+            <tr>
+                <td>background-color</td>
+                <td>Define el color de fondo de un elemento</td>
+                <td>color,transparent </td>
+            </tr>
+
+            <tr>
+                <td>font-size</td>
+                <td>Define el tamaño de la fuente del texto</td>
+                <td>xx-large, px, porcentaje</td>
+            </tr>
+
+            <tr>
+                <td>font-weigth</td>
+                <td>Define el grosor de la fuente del texto</td>
+                <td>normal, bold,lighter,bolder</td>
+            </tr>
+
+            <tr>
+                <td>font-style</td>
+                <td>Define el estilo de la fuente del texto</td>
+                <td>normal,italic,oblique</td>
+            </tr>
+
+            <tr>
+                <td>font-family</td>
+                <td>Define el tipo de letra a utilizar para el texto</td>
+                <td>nombre de familia,nombre genérico</td>
+            </tr>
+
+            <tr>
+                <td>text-aling</td>
+                <td>Define la alineación horizontal del texto</td>
+                <td>start,solid </td>
+            </tr>
+
+            <tr>
+                <td>text-decoration</td>
+                <td>Define la decoración del texto</td>
+                <td>underline,overline,line-through,blink,none,overline underline</td>
+            </tr>
+
+            <tr>
+                <td>text-transform</td>
+                <td>Define la transformación del texto</td>
+                <td>none,right</td>
+            </tr>
+
+            <tr>
+                <td>letter-spacing</td>
+                <td>Define el espacio entre letras</td>
+                <td>normal, 0.4em, 1em,-0.05em, 6px</td>
+            </tr>
+
+            <tr>
+                <td>line-heigt</td>
+                <td>Define la altura de línea del texto</td>
+                <td>1.2, 1.2em,120%,</td>
+            </tr>
+
+        </table>
+
+
+
+
+
+        <h3>2.1- Crea un archivo HTML con la estructura básica de una página web, agregar como título “Práctica de CSS”.
+            Crea un encabezado de página con el mismo título, agrega un subtítulo con tu Nombre y Apellido.</h3><br>
+        <h3>2.2- Crea una hoja de estilos CSS y vincularla a tu archivo HTML:
+            Crea un archivo nuevo en el mismo directorio que tu archivo HTML. Debe llamarse estilos.css
+            En este punto aprenderás cómo agregar un comentario en un CSS. Dentro del archivo creado, escribe el
+            siguiente código para la estructura básica de tu hoja de estilos CSS:
+            /* Estilos para la página web */
+            Vincula tu hoja de estilos CSS a tu archivo HTML, puedes usar como guía la pregunta 1.8. Agregar la
+            siguiente línea de código en el encabezado de tu archivo HTML:
+            link rel="stylesheet" type="text/css" href="estilos.css"
+            Asegúrate de que el valor del atributo href apunte al nombre de tu archivo CSS.</h3><br>
+        <h3>2.3- Utiliza selectores por etiquetas para aplicar estilos a las etiquetas HTML, como el tamaño de fuente,
+            el color de fondo y el color del texto:
+            Utiliza el selector body para aplicar estilos al cuerpo de la página, como el color de fondo y el tamaño de
+            fuente.
+            body {
+            background-color: #f2f2f2;
+            font-size: 16px;
+            }
+            Utiliza el selector h1 para aplicar estilos al encabezado de la página, como el tamaño de fuente y el color
+            del texto.
+            h1 {
+            font-size: 36px;
+            color: #333;
+            }
+            Utiliza el selector p para aplicar estilos al contenido de la página, como el tamaño de fuente y el color
+            del texto a elección.</h3> <br>
+        <h3>2.4- En este punto aprenderás a utilizar selectores por clase para aplicar estilos a elementos específicos
+            de la página, como los encabezados, los párrafos, las imágenes, botones, etc:
+            Agrega una clase encabezado a tu encabezado de la página para aplicar estilos específicos a ese elemento.
+            En el HTML
+            h1 class="encabezado" Práctica de CSS /h1
+
+            En el CSS
+            .encabezado {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 42px;
+            }
+
+            Explicar en un párrafo en minúscula, los cambios que recibió el texto.
+            Agrega una clase parrafo a un párrafo en tu página para aplicar estilos específicos a ese elemento.
+
+
+            .parrafo {
+            text-align: justify;
+            text-transform: capitalize;
+            font-size: 24px;
+            }
+            2.5- Ahora aprenderás a utilizar el selectores por ID para aplicar estilos a elementos únicos de la página,
+            como una imagen de fondo o un menú desplegable:
+            Agrega un ID fondo a tu cuerpo de la página para aplicar un fondo específico a toda la página.
+            En el HTML
+            body id="fondo"
+
+            En el CSS
+            #fondo {
+            background-color: #aa3b3b; /* modificar el color a elección */
+            }
+        </h3> <br>
+        <h3>2.6- Utiliza selectores descendentes para aplicar estilos a elementos dentro de otros elementos, como un
+            enlace dentro de un párrafo:
+            Agrega un enlace a un párrafo en tu página.
+            p Este es un párrafo de ejemplo. a href="#">Haz clic aqui /a para obtener más información./p
+            Utiliza un selector descendente para aplicar estilos al enlace dentro del párrafo. ¿Qué se modifica?
+            p a {
+            color: #333;
+            text-decoration: none;
+            }
+            Utiliza las propiedades de CSS que se han presentado, como font-weight. Crea un ejemplo para cada una de
+            ellas utilizando una clase para cada una.
+        </h3><br>
+
+
+
+
+
+
 
 
     </main>
