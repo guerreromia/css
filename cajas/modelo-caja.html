@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo Cajas</title>
     <style>
-        .caja{
+        .caja {
             background-color: antiquewhite;
             /*ancho*/
             width: 200px;
             /*alto*/
             height: 200px;
-            text-align: center;/*alineación de texto*/
+            text-align: center;
+            /*alineación de texto*/
             /*bordes*/
-            /*border: 5px solid rgb(178, 141, 212); tamaño tipo color*/;
+            /*border: 5px solid rgb(178, 141, 212); tamaño tipo color*/
+            ;
             /*border-style: double;*/
             /*border-color:  rgb(164, 130, 196);*/
-            border-top: 5px solid  rgb(208, 218, 248);
-            border-bottom:5px solid rgb(226, 228, 234);
-            border-right: 5px solid  rgb(195, 206, 238);
+            border-top: 5px solid rgb(208, 218, 248);
+            border-bottom: 5px solid rgb(226, 228, 234);
+            border-right: 5px solid rgb(195, 206, 238);
             border-left: 5px solid rgb(165, 176, 210);
 
             /*top: arriba*/
@@ -26,20 +29,37 @@
             /*bottom: abajo*/
             /*left: izquierda*/
             /*padding: relleno entre el borde y el contenido*/
-            padding: 25px;/*cuando hay un solo valor, se le aplica alos 4 lados*/
-            padding-left: 25px;/*el valor minimo va a ser 0*//*padding-top,padding-rigth,padding-bottom*/
+            padding: 25px;
+            /*cuando hay un solo valor, se le aplica alos 4 lados*/
+            padding-left: 25px;
+            /*el valor minimo va a ser 0*/
+            /*padding-top,padding-rigth,padding-bottom*/
             /*margenes*/
-            margin: 50px; /*se aplica a los 4 lados*/
+            margin: 50px;
+            /*se aplica a los 4 lados*/
             margin-right: 12px;
         }
-
     </style>
 </head>
-<body>
 
+<body>
+    
     <div class="caja">
         CET Nº30
     </div>
-    
+
+    <div class="box"> <!--padre-->
+        <div class="a"> <!--el hijo-->
+            arból
+        </div>
+        <div class="b"> <!--el hijo-->
+            boca
+        </div>
+
+    </div>
+   
 </body>
+
+
+
 </html>

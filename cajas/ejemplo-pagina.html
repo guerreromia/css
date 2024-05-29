@@ -1,20 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de Página</title>
+    <link rel="stylesheet" href="./ejemplo-pagina.css">
 </head>
+
 <body>
     <header>
         <h1>Módelo de Página (usando módelo de cajas)</h1>
+        <nav> <!--caja de navegación-->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <!--
+        otras cajas semámticas:
+        - section:agrupa el contenido relacionado de una página, es una sección.
+        ej: <section>contenido</section>
+
+        - article:es un contenido relacionado con un blog, una noticia, un tema cientifico.
+        ej: <article>el contenido</article>
+
+        - aside:es un contenido relacionado con la idea principal de la pàgina, suele estar acompañando main.
+      -->
+
+        <section>
+            <h2>Sección uno</h2>
+            <img src="https://picsum.photos/300/200" alt="imagen">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at eos, nobis nemo esse autem dolores
+                maiores amet consequuntur, vel adipisci reprehenderit, soluta illo facere sint animi aliquid aliquam.
+                Suscipit.
+            </p>
+        </section>
+
+        <section>
+            <h2>Sección dos</h2>
+            <img src="https://picsum.photos/300/200" alt="imagen">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at eos, nobis nemo esse autem dolores
+                maiores amet consequuntur, vel adipisci reprehenderit, soluta illo facere sint animi aliquid aliquam.
+                Suscipit.
+            </p>
+        </section>
+
+        <section>
+            <h2>Sección tres</h2>
+            <img src="https://picsum.photos/300/200" alt="imagen">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at eos, nobis nemo esse autem dolores
+                maiores amet consequuntur, vel adipisci reprehenderit, soluta illo facere sint animi aliquid aliquam.
+                Suscipit.
+            </p>
+        </section>
+
+        <section>
+            <h2>Sección cuatro</h2>
+            <img src="https://picsum.photos/300/200" alt="imagen">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at eos, nobis nemo esse autem dolores
+                maiores amet consequuntur, vel adipisci reprehenderit, soluta illo facere sint animi aliquid aliquam.
+                Suscipit.
+            </p>
+        </section>
 
     </main>
     <footer>
 
+        <p>hecho con ♡</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <ul>
+            <li>
+                <a href=""></a> <img src="instagram.png" alt="instagram">
+            </li>
+
+            <li>
+                <a href=""></a> <img src="pinterest.png" alt="pinterest">
+            </li>
+
+            <li>
+                <a href=""></a> <img src="spotify.png" alt="spotify">
+            </li>
+        </ul>
+
     </footer>
-    
+
 </body>
+
 </html>

@@ -1,0 +1,37 @@
+/*COMENTARIO EN CSS*/
+
+body {
+    background-color: antiquewhite; /*Color de fondo*/
+    color:  rgb(164, 130, 196);
+    text-align: center; /*Alineación de texto*/
+    font-family: 'Times New Roman', Times, serif; /*Cambia fuente de letras*/
+    margin:0; /*elimina el margen de los 4 lados de body*/
+}
+/*ENCABEZADO*/
+
+header{
+    background-color:rgb(178, 141, 212) ;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase; /*pone las letras en mayúscula*/
+    font-size: 2em;/*tamaño de fuente, em es una unidad de médida de CSS.
+    Es relativo al elemento padre de 16px*/
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /*pone la lista horizontal*/
+    margin: 10px;
+}
+
