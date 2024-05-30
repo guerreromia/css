@@ -33,5 +33,72 @@ nav ul {
 nav ul li {
     display: inline-block; /*pone la lista horizontal*/
     margin: 10px;
+    background-color: blanchedalmond;
+    border: 2px solid #000000;
+    padding: 6px;
 }
 
+nav ul li a{
+    color: black;
+    text-decoration: none; /*Elimina el subrayado de la etuiqueta anchor (a)*/
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500; /*Peso del contorno de la fuente*/
+}
+
+/*MAIN*/
+
+section{
+  background-color: #d0b4dd; /*rgb(176, 167, 186) ;*/
+  border: 2px solid #000000;
+  margin: 15px 15px 15px 15px; /*top-bottom left-rigth*/
+  /*margin: 10px 5px 6px 15px; (top-rigth-bottom-left)*/
+  text-align: left;
+}
+
+section h2{
+    margin-left: 40px;
+}
+
+.container{
+    display: flex; /*Trabaja con las cajas según su disposición. Pone su contenido uno al lado del otro en forma horizontal.*/
+}
+
+.imagen{
+    margin: 10px;
+}
+
+
+
+/*Pie de la página*/
+
+/*footer nav ul il{
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+/*Forma anidada de escribir en CSS*/
+
+footer{
+    nav{
+        background-color: bisque;
+        ul{
+            li{
+                background-color: transparent;
+                border: 0;
+
+                a{
+                    color: rgb(191, 161, 219);
+                }
+            }
+        }
+    }
+}
+
+.redes{
+    width: 90px;
+}
+
+.sociales{
+    list-style: none;
+}
